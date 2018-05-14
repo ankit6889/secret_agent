@@ -1,0 +1,210 @@
+/* General Section*/
+html{
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body{
+  font-family: Helvetica;
+  color: white;
+  display: block;
+  }
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1rem;
+}
+
+div{
+  display: block;
+}
+
+/*Header Section */
+
+header{
+  background-color: black;
+  opacity: 1;
+  width: 100%;
+}
+
+.logo img{
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.logo{
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+
+
+/*Banner Section */
+
+.banner {
+  background: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+
+}
+.new_arrival{
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  align-self: flex-start;
+  padding: 2rem 3rem;
+  background-color: black;
+}
+
+.new_arrival h1{
+  padding: 0.25rem 0;
+}
+
+.navigation{
+  background-color: firebrick;
+}
+
+.navi1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.navi2{
+  display: none;
+  padding: 0.75rem 0;
+}
+/*Product Section*/
+
+.products,
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+.description {
+  display: block;
+  padding: 0.5rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+/* Location and Hours Section*/
+
+.location_hours {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.location, .hours{
+  width: 35%;
+}
+
+.info h2{
+  display: block;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.info span{
+  color: black;
+  }
+
+/*Footer Section */
+
+footer{
+  padding: 5rem 0;
+  background-color: black;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .product{
+    width: 47%;
+  }
+  .glasses{
+    display: none;
+  }
+.navi1{
+  display: none;
+}
+.navi2{
+  display:block;
+  text-align: center;
+
+}
+}
+
+@media only screen and (max-width: 470px) {
+  .banner{
+    height: 15rem;
+  }
+
+.new_arrival{
+  width: 100%
+  padding: 1rem 2rem;
+  top: 10rem;
+}
+
+.new_arrival h2{
+  font-size: .77rem;
+}
+
+.new_arrival h1{
+  font-size: 1rem;
+}
+
+.products .location_hours{
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .location_hours{
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  footer{
+    text-align: center;
+  }
+}
